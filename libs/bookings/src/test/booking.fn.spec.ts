@@ -30,7 +30,7 @@ describe('[Booking API]', () => {
             expect(bookings).toHaveLength(1);
             expect(bookings[0]).toBeInstanceOf(Booking);
             expect(ts_client.get).toHaveBeenCalledWith(
-                `/api/staff/v1/bookings?period_start=1&period_end=2&type=desk`,
+                `ngs?period_start=1&period_end=2&type=desk`,
             );
             spy.mockReset();
         });
